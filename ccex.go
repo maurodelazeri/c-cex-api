@@ -92,7 +92,6 @@ func NewClient() *Client {
 func (c *Client) do(endpoint string, params map[string]string) ([]byte, error) {
 
 	url := buildUrl(endpoint, params)
-
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		return nil, fmt.Errorf("http.NewRequest: %v (API endpoint: %s)",
