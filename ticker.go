@@ -1,4 +1,4 @@
-package c-cex
+package ccex
 
 import (
 	"encoding/json"
@@ -29,7 +29,7 @@ type jsonResponse struct {
 	Result  json.RawMessage `json:"result"`
 }
 
-// c-cex API implementation of Ticker endpoint.
+// ccex API implementation of Ticker endpoint.
 //
 // Endpoint:  getmarketsummaries
 // Method: GET

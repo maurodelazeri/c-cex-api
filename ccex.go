@@ -2,7 +2,7 @@
 //
 // API Doc: https://c-cex.com/?id=api
 //
-package c-cex
+package ccex
 
 import (
 	"encoding/json"
@@ -28,7 +28,7 @@ type Client struct {
 }
 
 type configuration struct {
-	apiConf `json:"c-cex_api"`
+	apiConf `json:"ccex_api"`
 }
 
 type apiConf struct {
@@ -46,7 +46,7 @@ func init() {
 	customFormatter.ForceFormatting = true
 	logrus.SetFormatter(customFormatter)
 
-	logger = logrus.WithField("prefix", "[api:c-cex]")
+	logger = logrus.WithField("prefix", "[api:ccex]")
 
 	content, err := ioutil.ReadFile("conf.json")
 
